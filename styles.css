@@ -7,7 +7,6 @@
     --color-red-scarlett: #ed2100;
     --color-orange-neon: #ff5c00;
     --color-white: #fff;
-    --font-size-btn: 1.5rem;
 }
 
 * {
@@ -26,15 +25,45 @@ section {
 
 #ui {
     width: max-content;
+    overflow: hidden;
 }
 
 #display {
+    display: flex;
+    flex-direction: column;
     height: 100px;
     width: 100%;
     border-width: 2px;
     border-style: solid;
     border-color: var(--color-bg-darker);
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+#upper-display {
+    flex-direction: row;
+    padding: 5px;
+    height: 60%;
+    border-color: var(--color-bg-darker);
+    border-style: dashed;
+    border-bottom:var(--color-bg-darker);
+}
+
+#past-display {
+    height: 100%;
+    border-left: var(--color-bg-darker);
+}
+
+#operator-display {
+    display: inline-block;
+    text-align: end;
+}
+
+#bottom-display {
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: end;
+    vertical-align: baseline;
+    align-content: baseline;
 }
 
 #calculator {
@@ -59,7 +88,6 @@ section {
     border-width: 0.2px;
     border-radius: 5%;
     border-color: var(--color-bg-lightest);
-
 }
 
 .btn-calc-num {

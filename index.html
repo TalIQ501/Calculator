@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <title>Calculator</title>
 </head>
-<body>
+<body> 
     <header>
 
     </header>
     <section id="ui">
         <div id="display">
-            <div id="past-dispay">
-                
+            <div id="upper-dispay">
+                <div id="past-display"></div>
+                <div id="operator-display"></div>
             </div>
-            <div id="current-display">
+            <div id="bottom-display">
                 
             </div>
         </div>
         <div id="calculator">
             <div id="row-1" class="row">
-                <button id="btn-parenthesis-begin" class="btn-calc">(</button>
-                <button id="btn-parenthesis-end" class="btn-calc">)</button>
-                <button id="btn-percent" class="btn-calc">%</button>
+                <button id="btn-place1" class="btn-calc"></button>
+                <button id="btn-del" class="btn-calc">DEL</button>
+                <button id="btn-place2" class="btn-calc"></button>
                 <button id="btn-clear" class="btn-calc">AC</button>
             </div>
             <div id="row-2" class="row">
@@ -34,8 +36,8 @@
             </div>
             <div id="row-3" class="row">
                 <button id="btn-6" class="btn-calc btn-calc-num">6</button>
-                <button id="btn-7" class="btn-calc btn-calc-num">5</button>
-                <button id="btn-8" class="btn-calc btn-calc-num">4</button>
+                <button id="btn-5" class="btn-calc btn-calc-num">5</button>
+                <button id="btn-4" class="btn-calc btn-calc-num">4</button>
                 <button id="btn-multiply" class="btn-calc">*</button>
             </div>
             <div id="row-3" class="row">
