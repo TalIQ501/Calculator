@@ -86,7 +86,7 @@ const operate = () => {
                 return giveAnswer(Number(pastDisplayText) * Number(bottomDisplayText));
             case '/':
                 if (bottomDisplayText == 0) {
-                    return 
+                    return deliverMsg('');
                 }
                 return giveAnswer(Number(pastDisplayText) / Number(bottomDisplayText));
         }
